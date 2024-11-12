@@ -1,18 +1,12 @@
 package test;
 
-public class Auto {
+class Auto {
     String modelo;
     int precio;
-    Asiento asiento1;
-    Asiento asiento2;
-    Asiento asiento3;
-    Asiento asiento4;
-    Asiento asiento5;
-    Asiento asiento6;
+    Asiento[] asientos;
     String marca;
-    Motor motor;
     int registro;
-    static int cantidadCreados = 0;
+    static int cantidadCreados;
 
     public Auto(String modelo, int precio, String marca, Motor motor, int registro) {
         this.modelo = modelo;

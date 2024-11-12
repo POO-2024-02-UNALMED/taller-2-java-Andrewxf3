@@ -1,14 +1,15 @@
 package test;
-public class Asiento {
+
+class Asiento {
+
     String color;
     int precio;
     int registro;
 
-    public void cambiarColor(String nuevoColor) {
-        if (nuevoColor.equals("rojo") || nuevoColor.equals("verde") || 
-            nuevoColor.equals("amarillo") || nuevoColor.equals("negro") || 
-            nuevoColor.equals("blanco")) {
-            this.color = nuevoColor;
+    void cambiarColor(String color) {
+        if (color == "rojo" || color == "verde" || color == "amarillo" || color == "negro" || color == "blanco") {
+            this.color = color;
         }
     }
+    
 }
